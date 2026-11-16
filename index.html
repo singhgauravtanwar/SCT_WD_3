@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav's Quiz Challenge - SkillCraft Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-box">
+
+        <h1>Gaurav's Quiz Challenge</h1>
+        <p class="subtitle">Made by Gaurav Singh | SkillCraft Internship</p>
+
+        <div id="game-area">
+
+            <div class="top-info">
+                <span id="q-count">Question 1 / 10</span>
+                <span id="my-score">Score: 0</span>
+                <span id="my-timer">Time: 30s</span>
+            </div>
+
+            <div class="progress-outer">
+                <div id="my-progress"></div>
+            </div>
+
+            <p class="category-tag" id="q-category">General Knowledge</p>
+            <h2 id="q-text">Question yahan aayega</h2>
+
+            <div id="option-box"></div>
+
+            <button id="next-btn">Next Question -></button>
+            <button id="skip-btn">Skip Question</button>
+
+        </div>
+
+        <div id="final-box" class="hide">
+            <h2>Well Done Gaurav!</h2>
+            <h1 id="final-marks">0 / 10</h1>
+            <p id="final-msg"></p>
+            <p id="final-feedback"></p>
+            <button onclick="startAgain()">Play Again</button>
+        </div>
+
+        <p class="footer">Created by Gaurav Singh - SCT_WD_3</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

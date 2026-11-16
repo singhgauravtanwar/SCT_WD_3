@@ -1,0 +1,142 @@
+/* Gaurav's Quiz Challenge - SkillCraft Task 3 - SCT_WD_3 */
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-box {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.main-box h1 {
+    text-align: center;
+    color: #0f3460;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin: 8px 0 20px;
+    font-size: 14px;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#my-timer { color: #e94560; }
+
+.progress-outer {
+    background: #eee;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#my-progress {
+    background: linear-gradient(90deg, #e94560, #0f3460);
+    height: 100%;
+    width: 0%;
+    transition: 0.4s;
+}
+
+.category-tag {
+    display: inline-block;
+    background: #e94560;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#q-text { font-size: 20px; color: #222; margin-bottom: 18px; }
+
+.option {
+    display: block;
+    background: #f4f6ff;
+    border: 2px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option:hover { border-color: #0f3460; background: #eef2ff; }
+.option input { margin-right: 10px; }
+
+#blankAns {
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#next-btn {
+    width: 100%;
+    padding: 13px;
+    background: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#skip-btn {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: #0f3460;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#final-box { text-align: center; }
+#final-marks { font-size: 45px; color: #e94560; margin: 15px 0; }
+#final-msg { font-size: 18px; font-weight: bold; margin-bottom: 8px; }
+#final-feedback { color: #666; margin-bottom: 20px; }
+#final-box button {
+    padding: 12px 25px;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.hide { display: none; }
